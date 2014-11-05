@@ -121,3 +121,162 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 17:41:3
 
 
 Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-05 17:41:38 +0900
+
+
+Started GET "/games/" for 127.0.0.1 at 2014-11-05 17:56:17 +0900
+Processing by GamesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4110ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ruby_study_development collection=games selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4020ms
+  Rendered games/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2014-11-05 18:00:25 +0900
+Processing by GamesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ruby_study_development collection=games selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2510ms
+  Rendered games/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 58ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2014-11-05 18:01:09 +0900
+Processing by GamesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4770ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ruby_study_development collection=games selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2500ms
+  Rendered games/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2014-11-05 18:01:29 +0900
+Processing by GamesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7800ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ruby_study_development collection=games selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1950ms
+  Rendered games/index.html.haml within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 183ms
+
+ActionView::Template::Error (Missing partial layouts/_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/gamisanga/apps/RubyStudy/app/views"
+):
+     6:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+     7:     = csrf_meta_tags
+     8:   %body
+     9:     = render 'layouts/nav'
+    10:     = render 'layouts/notice'
+    11:     = yield
+    12:     = render 'layouts/footer'
+  app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml___2159458548858122856_70150872709200'
+
+
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.4ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2014-11-05 18:03:37 +0900
+Processing by GamesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ruby_study_development collection=games selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2080ms
+  Rendered games/index.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (Missing partial layouts/_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/gamisanga/apps/RubyStudy/app/views"
+):
+     6:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+     7:     = csrf_meta_tags
+     8:   %body
+     9:     = render 'layouts/nav'
+    10:     = render 'layouts/notice'
+    11:     = yield
+    12:     = render 'layouts/footer'
+  app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml___2159458548858122856_70150874608760'
+
+
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.6ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2014-11-05 18:06:12 +0900
+Processing by GamesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ruby_study_development collection=games selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2540ms
+  Rendered games/index.html.haml within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 205ms
+
+ActionView::Template::Error (Missing partial layouts/_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/gamisanga/apps/RubyStudy/app/views"
+):
+     6:     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+     7:     = csrf_meta_tags
+     8:   %body
+     9:     = render 'layouts/nav'
+    10:     = render 'layouts/notice'
+    11:     = yield
+    12:     = render 'layouts/footer'
+  app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml___4467009632881303539_70255943316520'
+
+
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.4ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2014-11-05 18:10:37 +0900
+Processing by GamesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3700ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ruby_study_development collection=games selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2030ms
+  Rendered games/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_nav.html.haml (1.7ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (Missing partial layouts/_notice with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/gamisanga/apps/RubyStudy/app/views"
+):
+     7:     = csrf_meta_tags
+     8:   %body
+     9:     = render 'layouts/nav'
+    10:     = render 'layouts/notice'
+    11:     = yield
+    12:     = render 'layouts/footer'
+  app/views/layouts/application.html.haml:10:in `_app_views_layouts_application_html_haml___4467009632881303539_70255943316520'
+
+
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/gamisanga/.anyenv/envs/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.7ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2014-11-05 18:35:57 +0900
+Processing by GamesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4200ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ruby_study_development collection=games selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2510ms
+  Rendered games/index.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_nav.html.haml (0.1ms)
+  Rendered layouts/_notice.html.haml (1.8ms)
+  Rendered layouts/_footer.html.haml (1.2ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/games.css?body=1" for 127.0.0.1 at 2014-11-05 18:35:57 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 18:35:57 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 18:35:57 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 18:35:57 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 18:35:57 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-05 18:35:57 +0900
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2014-11-05 18:35:57 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 18:35:57 +0900
