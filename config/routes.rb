@@ -1,10 +1,21 @@
 Rails.application.routes.draw do
+  get 'registrations/new'
+
+  get 'sessions/new'
+
+  get 'me/index'
+
   root 'welcome#index'
 
   get 'tos' => 'welcome#tos'
   get 'policy' => 'welcome#policy'
   get 'about' => 'welcome#about'
   get 'test' => 'welcome#test'
+  get 'me' => 'me#index'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  get 'register' => 'registrations#new'
+  post 'register' => 'registrations#create'
 
   resources :games
 
